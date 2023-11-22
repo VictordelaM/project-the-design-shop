@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 7fr 2fr 1fr 1fr;
+    grid-template-areas: 
+    "h1 week contact tde";
+    position: fixed;
+    width: 100vw;
+    padding: 5vh;
+    overflow: hidden;
+    background-color: white;
+}
+
+header h1{
+    grid-area: h1;
+}
+
+header p:nth-of-type(1){
+    grid-area: week;
+}
+
+header p:nth-of-type(2){
+    grid-area: contact;
+}
+
+header p:nth-of-type(3){
+    grid-area: tde;
+}
+
+img{
+    height: max-content;
+    width: 33vw;
+}
+
+.big img{
+    width: 100%;
+    height: max-content;
+}
+
+main{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(14, max-content);
+    grid-template-areas: 
+    "kranken kranken kranken"
+    "swing hajo zed"
+    "elec woodie logo"
+    "dieter dieter dieter"
+    "eye gather dipped"
+    "sayl three from"
+    "arigato arigato arigato"
+    "winston letter coffee"
+    "beoplay make black1"
+    "min min min"
+    "grid1 card classic"
+    "mouse travel key"
+    "bottle bottle bottle"
+    "geo womb water";
+}
+
+main p{
+    
+}
+.kranken{
+    grid-area: kranken;
+}
+
+.swing{
+    grid-area: swing;
+}
+.hajo{
+    grid-area: hajo;
+}
+.zed{
+    grid-area: zed;
+}
+.elec{
+    grid-area: elec;
+}
+.woodie{
+    grid-area: woodie;
+}
+.logo{
+    grid-area: logo;
+}
+.dieter{
+    grid-area: dieter;
+}
+.eye{
+    grid-area: eye;
+}
+.gather{
+    grid-area: gather;
+}
+.dipped{
+    grid-area: dipped;
+}
+.sayl{
+    grid-area: sayl;
+}
+.three{
+    grid-area: three;
+}
+.from{
+    grid-area: from;
+}
+.arigato{
+    grid-area: arigato;
+}
+.winston{
+    grid-area: winston;
+}
+.letter{
+    grid-area: letter;
+}
+.coffee{
+    grid-area: coffee;
+}
+.beoplay{
+    grid-area: beoplay;
+}
+.make{
+    grid-area: make;
+}
+.black{
+    grid-area: black1;               
+}
+.min{
+    grid-area: min;
+}
+.grid{
+    grid-area: grid1;
+}
+.card{
+    grid-area: card;
+}
+.classic{
+    grid-area: classic;
+}
+.mouse{
+    grid-area: mouse;
+}
+.travel{
+    grid-area: travel;
+}
+.key{
+    grid-area: key;
+}
+.bottle{
+    grid-area: bottle;
+}
+.geo{
+    grid-area: geo;
+}
+.womb{
+    grid-area: womb;
+}
+.water{
+    grid-area: water;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: ;
+}
+
+
+
+
+
