@@ -204,17 +204,34 @@ main{
     grid-area: water;
 }
 
-footer{
-    display: grid;
-    grid-template-columns: ;
-}
-
 .design , .contact , .news ,.find{
     color: #000;
     font-family: "Karla";
     font-size: 0.813rem;
     font-weight: 700;
 }
+
+
+/* .artikel{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "produkt price";
+}
+
+.column1{
+    grid-area: produkt;
+}
+
+.column2{
+    grid-area: price;
+}
+
+.marke{
+    grid-area: marke;
+} */
 
 .designedby {
     color: #000;
@@ -275,7 +292,86 @@ footer{
     font-weight: 400;
 }
 
+.copyright{
+    color: #848484;
+    font-family: "Karla";
+    font-size: 0.625rem;
+    font-weight: 400;
+    line-height: 200%; 
+    }
 
+footer{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "design contact news find"
+    "designedby email subscribe social"
+    "copyright . . .";
+    gap: 5vh;
+    margin-top: 7.5vh;
+}
 
+.design{
+    grid-area: design;
+}
 
+.contact{
+    grid-area: contact;
+}
+.news{
+    grid-area: news;
+}
 
+.find{
+    grid-area: find;
+}
+
+.designedby{
+    grid-area: designedby;
+}
+
+.email{
+    grid-area: email;
+}
+
+.subscribe{
+    grid-area: subscribe;
+}
+
+.social{
+    grid-area: social;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "facebook"
+    "instagram"
+    "twitter";
+}
+
+.social a:nth-of-type(1){
+    grid-area: facebook;
+    text-decoration: none;
+    color: #323A45;
+    font-family: "Karla";
+    font-size: 0.625rem;
+}
+.social a:nth-of-type(2){
+    grid-area: instagram;
+    text-decoration: none;
+    color: #323A45;
+    font-family: "Karla";
+    font-size: 0.625rem;
+}
+.social a:nth-of-type(3){
+    grid-area: twitter;
+    text-decoration: none;
+    color: #323A45;
+    font-family: "Karla";
+    font-size: 0.625rem;
+}
+
+.copyright{
+    grid-area: copyright;
+}
