@@ -9,6 +9,9 @@
     box-sizing: border-box;
 }
 
+.body{
+    padding:0 50px;
+}
 header{
     display: grid;
     grid-template-columns: 7fr 2fr 1fr 1fr;
@@ -19,6 +22,7 @@ header{
     padding: 5vh;
     overflow: hidden;
     background-color: white;
+    z-index: 1;
 }
 
 header h1{
@@ -52,7 +56,11 @@ header p:nth-of-type(3){
 
 img{
     height: max-content;
-    width: 33vw;
+    width: 100%;
+}
+
+img:hover {
+    opacity: 0.5;
 }
 
 .big img{
@@ -62,7 +70,7 @@ img{
 
 main{
     display: grid;
-    gap: 5px;
+    gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(14, max-content);
     grid-template-areas: 
@@ -212,26 +220,27 @@ main{
 }
 
 
-/* .artikel{
-    width: 100vw;
+.artikel{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 10fr 1fr;
     grid-template-areas: 
-    "produkt price";
+    "bild bild"
+    "pair prce";
 }
 
-.column1{
-    grid-area: produkt;
+.artikel a{
+    grid-area: bild;
 }
 
-.column2{
-    grid-area: price;
+.pair{
+    grid-area: pair;
 }
 
-.marke{
-    grid-area: marke;
-} */
+.price{
+    grid-area: prce;
+    text-align: right;
+}
 
 .designedby {
     color: #000;
